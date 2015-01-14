@@ -39,6 +39,25 @@ Symbols work well as a key for a hash because they are very clean and concise.
 They only require a single character, unlike strings (```:name``` vs ```"name"```).
 They are also significently faster.
 
+### Arrays
+
+Like in Objective-C, an array is a way to put a large list of values together.
+They are easier to create, however:
+
+```
+2.1.1 :001 > ary = [:bob, :joe, :larry]
+ => [:bob,:joe,:larry]
+```
+
+You can access a member of the array with a 0-based index.
+
+```
+2.1.1 :002 > ary[0]
+ => :bob
+2.1.1 :003 > ary[2]
+ => :larry
+```
+
 ### Task:
 
 Make a hash containing information about yourself. It should contain your first name, last name, age, and favorite color.
